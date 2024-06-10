@@ -50,7 +50,7 @@ def enviar_mensagem(mensagem, telefone, usuario, dtMensagem):
         
         '''if(passou de 10)
               CHAMAR FUNCAO DE INFERENCIA DE MODELO DE ML
-              DE ACORDO COM RESP... MANDAR PSICO'''
+              DE ACORDO COM RESP... '''
 
         # Adicione o prompt ao início da mensagem do usuário
         messages = [
