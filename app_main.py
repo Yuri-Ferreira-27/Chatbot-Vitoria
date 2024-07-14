@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 def bot_vitoria():
     
-    print(request.values)
+    #print(request.values)
 
     # Pega a mensagem do usuário
     msg_usuario = request.values.get('Body', '')
@@ -18,7 +18,7 @@ def bot_vitoria():
     usuario = request.values.get('ProfileName')
 
     #Pegando o telefone do usuário
-    num_telefone = request.values.get('Waid')
+    num_telefone = request.values.get('WaId')
 
     #Pegando a data da mensagem
     dtMensagem = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -31,8 +31,6 @@ def bot_vitoria():
 
     # Adiciona a mensagem à resposta
     resp.message(bot_response)
-
-    
 
     return str(resp)
 

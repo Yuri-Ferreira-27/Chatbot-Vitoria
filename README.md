@@ -1,6 +1,6 @@
 # Chatbot-Vitoria
 ## Descrição
-Este projeto tem como objetivo desenvolver um sistema onde um usuário pode conversar através do WhatsApp utilizando a API da Twilio. O sistema integra um chatbot que interage com o usuário, registra os dados em um banco de dados, e responde às mensagens utilizando a API da OpenAI para geração de texto. Após as interações, as mensagens são enviadas para um modelo de Machine Learning que analisa e determina o nível e o tipo de depressão do usuário.
+Este projeto tem como objetivo desenvolver um sistema onde um usuário pode conversar através do WhatsApp utilizando a API da Twilio. O sistema integra um chatbot que interage com o usuário, registra os dados em um banco de dados, e responde às mensagens utilizando a API da OpenAI para geração de texto. Após as interações, as mensagens são enviadas para um modelo de Machine Learning que analisa e classifica se o uusuário está depressivo ou não, a partir da acurácia do modelo de Machine Learning treinado.
 
 ## Funcionalidades
 Interação via WhatsApp: Usuários podem enviar mensagens através do WhatsApp, utilizando a API da Twilio.
@@ -13,6 +13,15 @@ Twilio API: Para integração com o WhatsApp.
 OpenAI API: Para geração de respostas do chatbot. Neste projeto, foi utilizado o modelo "gpt-3.5-turbo"
 Banco de Dados PostgreSQL: Para armazenamento de dados dos usuários e mensagens.
 Machine Learning: Para análise e determinação do nível e tipo de depressão.
+
+## Versões utilizadas
+Python: 3.9.2 (3.10 / 3.11 pode ser utilizado)
+Tensorflow: 2.15.0 
+Keras: 2.15.0
+Observação: Para que as libs do keras e tensorflow funcionem corretamente, o ideal é utilizar as versões citadas anteriormente e as versões do python mencionadas
+OpenAI: 0.28.0
+Pandas: 2.2.2
+NumPy: 1.26.4
 
 ## Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
